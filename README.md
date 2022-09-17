@@ -1,2 +1,2 @@
 # calculator
-My calculator project for The Odin Project task
+My calculator project for The Odin Project task.

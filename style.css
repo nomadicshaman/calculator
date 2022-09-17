@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.display {
+    width: 500px;
+    height: 100px;
+    border-style: solid;
+    border-bottom-style: none;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+button {
+    height: 100%;
+    width: 100%;
+    
+}
