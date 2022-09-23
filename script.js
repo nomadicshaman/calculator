@@ -53,3 +53,9 @@ clear.addEventListener('click', function () {
   topDisplay.textContent = '';
   bottomDisplay.textContent = '';
 });
+
+numbers.forEach((number) => number.addEventListener('click', function (e) {
+  callNumber(e.target.textContent);
+  bottomDisplay.textContent = currentValue;
+
+}));
