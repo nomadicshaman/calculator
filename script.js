@@ -2,37 +2,7 @@ let operator = '';
 let previousValue = '';
 let currentValue = '';
 
-//main math functions
 
-function add(a, b) {
-  return a + b;
-}
-
-function subtract(a, b) {
-  return a - b;
-}
-
-function multiply(a, b) {
-  return a * b;
-}
-
-function divide(a, b) {
-  return a / b;
-}
-
-
-
-//operate function that takes an operator and 2 numbers
-
-function operate(operator, a, b) {
-  if (operator == 'add') {
-    return add(a, b);
-  } else if (operator == 'subtract') {
-    return subtract(a, b);
-  } else if (operator == 'multiply') {
-    return multiply(a, b);
-  } else return divide(a, b);
-};
 
 
 // components from html
@@ -71,3 +41,44 @@ function callNumber(num) {
     currentValue += num;
   }
 };
+
+function callOperator(oper) {
+  operator = oper;
+  previousValue = currentValue;
+  currentValue = '';
+};
+
+//operate function that takes an operator and 2 numbers
+
+function operate() {
+  previousValue = Number(previousValue);
+  currentValue = Number(currentValue);
+
+  if (operator == '+') {
+    previousValue += currentValue;
+  } else if (operator == '-') {
+    previousValue -= currentValue;
+  } else if (operator == '*') {
+    previousValue *= currentValue;
+  } else {
+    previousValue /= currentValue;
+  };
+  
+  previousValue = previousValue.toString();
+  currentValue = previousValue.toString();
+
+
+};
+
+
+equal.addEventListener('click', function(){
+  operate();
+  topDisplay.textContent = '';
+  if (previousValue.length <= 9) {
+    bottomDisplay.textContent = previousValue;
+  } else {
+    bottomDisplay.textContent = previousValue.slice(0,9) + '...';
+  }
+  
+
+});

@@ -25,10 +25,12 @@ body {
 .bottom-display {
     width: 100%;
     height: 50%;
+    font-size: 30px;
 }
 
 .top-display {
     border-bottom-style: dotted;
+    
 }
 
 .button-container {
@@ -53,4 +55,14 @@ button {
     height: 100%;
     width: 100%;
     
+}
+
+.numeric-btn,
+.operation-btn {
+    font-size: 25px
+}
+
+#clear-button,
+#result-button {
+    font-size: 25px;
 }
