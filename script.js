@@ -59,3 +59,9 @@ numbers.forEach((number) => number.addEventListener('click', function (e) {
   bottomDisplay.textContent = currentValue;
 
 }));
+
+operators.forEach((op) => op.addEventListener('click', function (e) {
+  callOperator(e.target.textContent);
+  topDisplay.textContent = previousValue + ' ' + operator;
+  bottomDisplay.textContent = currentValue; 
+}));
