@@ -46,3 +46,10 @@ let operators = document.querySelectorAll('.operation-btn');
 let topDisplay = document.querySelector('.top-display');
 let bottomDisplay = document.querySelector('.bottom-display');
 
+clear.addEventListener('click', function () {
+  operator = '';
+  previousValue = '';
+  currentValue = '';
+  topDisplay.textContent = '';
+  bottomDisplay.textContent = '';
+});
