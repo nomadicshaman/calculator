@@ -65,3 +65,9 @@ operators.forEach((op) => op.addEventListener('click', function (e) {
   topDisplay.textContent = previousValue + ' ' + operator;
   bottomDisplay.textContent = currentValue; 
 }));
+
+function callNumber(num) {
+  if (currentValue.length < 5) {
+    currentValue += num;
+  }
+};
