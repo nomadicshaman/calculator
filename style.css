@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 
 .top-display {
     border-bottom-style: dotted;
-    
+
 }
 
 .button-container {
@@ -54,15 +54,30 @@ body {
 button {
     height: 100%;
     width: 100%;
-    
 }
 
 .numeric-btn,
 .operation-btn {
-    font-size: 25px
+    font-size: 25px;
+    border-radius: 30%;
 }
 
 #clear-button,
 #result-button {
     font-size: 25px;
+    background-color: rgb(188, 202, 202);
+    border-radius: 30%;
+}
+
+#clear-button {
+    background-color: red;
+}
+
+.operation-btn {
+    background-color: rgb(188, 202, 202);
+}
+
+.numeric-btn {
+    background-color: beige;
+
 }
