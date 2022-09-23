@@ -21,13 +21,13 @@ body {
     border-bottom-style: none;
 }
 
-.disp,
-.final {
+.top-display,
+.bottom-display {
     width: 100%;
     height: 50%;
 }
 
-.disp {
+.top-display {
     border-bottom-style: dotted;
 }
 
