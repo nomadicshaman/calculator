@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <h1 style="margin: 10px;">Some Amateur Calculator</h2>
+
+    <div class="main-container">
 
         <div class="display">
             <div class="top-display"></div>
@@ -18,35 +19,33 @@
         </div>
         <div class="button-container">
             <div class="row first-row">
-                <button type="button" id="clear-button" class="">C</button>
-                <button type="button" id="result-button" class="">=</button>
-            </div>
-            <div class="row second-row">
                 <button type="button" id="number-one" class="numeric-btn" value="1">1</button>
                 <button type="button" id="number-two" class="numeric-btn" value="2">2</button>
                 <button type="button" id="number-three" class="numeric-btn" value="3">3</button>
-                <button type="button" id="add-button" class="operation-btn" value="+">+</button>
+                <button type="button" id="number-four" class="numeric-btn" value="4">4</button>
+
+
+            </div>
+            <div class="row second-row">
+                <button type="button" id="number-five" class="numeric-btn" value="5">5</button>
+                <button type="button" id="number-six" class="numeric-btn" value="6">6</button>
+                <button type="button" id="number-seven" class="numeric-btn" value="7">7</button>
+                <button type="button" id="number-eight" class="numeric-btn" value="8">8</button>
 
             </div>
             <div class="row third-row">
-                <button type="button" id="number-four" class="numeric-btn" value="4">4</button>
-                <button type="button" id="number-five" class="numeric-btn" value="5">5</button>
-                <button type="button" id="number-six" class="numeric-btn" value="6">6</button>
-                <button type="button" id="subtract-button" class="operation-btn" value="-">-</button>
+                <button type="button" id="clear-button" class="">C</button>
+                <button type="button" id="number-nine" class="numeric-btn" value="9">9</button>
+                <button type="button" id="number-zero" class="numeric-btn" value="0">0</button>
+                <button type="button" id="result-button" class="">=</button>
+
             </div>
             <div class="row fourth-row">
-                <button type="button" id="number-seven" class="numeric-btn" value="7">7</button>
-                <button type="button" id="number-eight" class="numeric-btn" value="8">8</button>
-                <button type="button" id="number-nine" class="numeric-btn" value="9">9</button>
+                <button type="button" id="add-button" class="operation-btn" value="+">+</button>
+                <button type="button" id="subtract-button" class="operation-btn" value="-">-</button>
                 <button type="button" id="multiply-button" class="operation-btn" value="*">*</button>
-            </div>
-            <div class="row fifth-row">
-                <button type="button" id="number-zero" class="numeric-btn" value="0">0</button>
                 <button type="button" id="divide-button" class="operation-btn" value="/">/</button>
             </div>
-
-
-
         </div>
 
         <script src="script.js" async defer></script>
