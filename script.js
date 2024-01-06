@@ -21,6 +21,7 @@ let backSpace = document.querySelector('#back-space');
 backSpace.addEventListener('click', backSpaceFunc);
 function backSpaceFunc (){
   bottomDisplay.textContent = bottomDisplay.textContent.slice(0, - 1);
+  currentValue = bottomDisplay.textContent;
 };
 
 
@@ -31,11 +32,6 @@ clear.addEventListener('click', function () {
   topDisplay.textContent = '';
   bottomDisplay.textContent = '';
 });
-
-
-
-
-
 
 // forEach functions for numbers and operators buttons to get the values from html and display them
 
