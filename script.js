@@ -16,6 +16,14 @@ let operators = document.querySelectorAll('.operation-btn');
 let topDisplay = document.querySelector('.top-display');
 let bottomDisplay = document.querySelector('.bottom-display');
 
+let backSpace = document.querySelector('#back-space');
+
+backSpace.addEventListener('click', backSpaceFunc);
+function backSpaceFunc (){
+  bottomDisplay.textContent = bottomDisplay.textContent.slice(0, - 1);
+};
+
+
 clear.addEventListener('click', function () {
   operator = '';
   previousValue = '';
@@ -23,6 +31,11 @@ clear.addEventListener('click', function () {
   topDisplay.textContent = '';
   bottomDisplay.textContent = '';
 });
+
+
+
+
+
 
 // forEach functions for numbers and operators buttons to get the values from html and display them
 
@@ -64,7 +77,16 @@ function operate() {
     previousValue -= currentValue;
   } else if (operator == '*') {
     previousValue *= currentValue;
-  } else {
+  } else if (operator == '/'){
+    if(currentValue == 0) {
+      alert('error bitch! you can not divide by 0!');
+      operator = '';
+      previousValue = '';
+      currentValue = '';
+      topDisplay.textContent = '';
+      bottomDisplay.textContent = '';
+      return;
+    }
     previousValue /= currentValue;
   };
 

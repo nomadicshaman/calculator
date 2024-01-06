@@ -18,42 +18,57 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgb(248, 239, 239);
     border: 3px solid gray;
     border-radius: 10px;
     padding: 5px;
     box-shadow: 3px 5px 5px black;
     padding-bottom: 10px;
-    min-height: 80vh;
+}
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    
+}
+
+#back-space {
+    flex: auto;
+    width: 6vw;
+    font-size: 1rem;
 }
 
 .display {
-    display: flex;
-    flex-direction: column;
     background-color:white;
     color: black;
-    width: 30vw;
+    width: 90%;
+    margin: 1rem;
     font-size: 2rem;
     border-radius: 5%;
-    margin: 10px;
     padding: 0.5rem;
 }
 
+
 .top-display,
 .bottom-display {
-    min-height: 10vh;
+    height: 4rem;
+    
 }
 
 button {
-    height: 15vh;
-    width: 6vw;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     border: 2px solid rgb(88, 49, 56);
     font-size: 2rem;
     text-align: center;
     margin: 5px;
-    box-shadow: 0px 0px 2px 2px rgb(0,0,0)
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    flex: 1;
 
 }
 
@@ -69,4 +84,9 @@ button:hover {
 
 #clear-button {
     background-color: rgb(243, 54, 54);
+}
+
+.fifth-row {
+    display: flex;
+    justify-content: center;
 }
